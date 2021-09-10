@@ -10,8 +10,8 @@ public class StreamStartWith1 {
 		List<Integer> myList = Arrays.asList(12,34,1,45,120,10);
 		
 		myList.stream()
-		.map(x->x+"")
-		.filter(x-> x.startsWith("1"))
+		
+		.filter(x-> x.toString().startsWith("1"))
 		.forEach(System.out::println);
 				
 				
